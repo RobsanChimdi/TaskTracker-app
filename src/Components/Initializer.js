@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Mine from "./Mine"
+import classes from "./Initializer.module.css"
 const Initializer = () => {
     const [tasks, setTasks]=useState([]);
   const [val, setValue]=useState('')
@@ -42,14 +43,17 @@ const Initializer = () => {
     <div>
     <input type='text' value={val} onChange={(e)=>setValue(e.target.value)}/>
      <button onClick={Handle}>Add</button>
-     {
+    <div className={classes.Tasks}> {
       tasks.map((item, index)=>(
-          <li key={index}>{item.name}-{item.complete ? "Done" : "Pending"}
+        
+           <li key={index}><span>{item.name}-{item.complete ? "Done" : "Pending"}</span>
             <button onClick={() => Handler(index)}>
               {item.complete ? "Undo" : "Finish"}
             </button></li>
+
       ))
      }
+     </div>
     <Mine tasknum={count} tasknum2={5} tasknum3={7}/>
     </div>
   )

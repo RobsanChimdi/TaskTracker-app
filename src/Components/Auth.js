@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { auth, googleProvider} from "../Firebase/Firebase"
 import { createUserWithEmailAndPassword, signInWithPopup} from "firebase/auth"
-export const Auth=()=>{
+ const Auth=()=>{
     const [email, setEmail]=useState("");
     const [pass, setPass]=useState("");
     const signin= async ()=>{
@@ -26,3 +26,5 @@ export const Auth=()=>{
     </div>
   )
 }
+
+export default Auth

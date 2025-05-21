@@ -1,11 +1,11 @@
-import './App.css';
-import { Auth } from './Component/auth';
-import Mine from "./Component/Mine"
-import Initializer from './Component/Initializer,';
+import React from "react";
+import Auth from "./Components/Auth"
+ import Initializer from "./Components/Initializer"
 
 function App() {
+
   
-  return (
+   return (
     <div className="App">
     <Auth/>
     <Initializer/>

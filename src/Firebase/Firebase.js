@@ -1,12 +1,13 @@
-import { initializeApp} from "firebase/app";
+
+import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 const firebaseConfig = {
-  apiKey:  ,
-  authDomain: "practice-b8957.firebaseapp.com",
-  projectId: "practice-b8957",
-  storageBucket: "practice-b8957.firebasestorage.app",
-  messagingSenderId: "522972616820",
-  appId: "1:522972616820:web:d292371a219e1b9725d921"
+  apiKey:process.env.REACT_APP_API_KEY,
+  authDomain: "tasktracker-bc091.firebaseapp.com",
+  projectId: "tasktracker-bc091",
+  storageBucket: "tasktracker-bc091.firebasestorage.app",
+  messagingSenderId: "1057615919783",
+  appId: "1:1057615919783:web:78c664180b12b01f967982"
 };
 
 // Initialize Firebase

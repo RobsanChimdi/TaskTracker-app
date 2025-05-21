@@ -1,0 +1,32 @@
+.Tasks{
+    background-color: gray;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 520px;
+    }
+.Tasks li {
+  display: flex; /* Ensure the li is a flex container */
+}
+.Tasks LI span{
+    width: 420px;
+    background-color: aliceblue;
+    white-space: nowrap;   /* Prevent text wrapping */
+    overflow: hidden;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    text-overflow:ellipsis;
+    flex-grow: 1;
+}
+.Tasks li button {
+    box-sizing: border-box;
+    display: inline-flex;
+  flex-grow: 1;
+  width: 30px;
+  height: 30px;
+  /* Makes the button grow to fill available space */
+  /* Other button styles (padding, alignment, etc.) */
+}
