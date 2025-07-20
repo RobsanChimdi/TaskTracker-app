@@ -1,0 +1,14 @@
+.navigator{
+    width: 150px;
+    height:500px;
+    background-color: rgb(24, 232, 232);
+    left: 0%;
+    position: absolute;
+    z-index: 1;
+}
+
+.navigator ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

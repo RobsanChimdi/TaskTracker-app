@@ -6,12 +6,12 @@ const Mine = ({tasknum, tasknum2, tasknum3}) => {
     const data = [
   { name: 'Completed', value: tasknum },
   { name: 'In Progress', value: tasknum2 },
-  { name: 'Pending', value: tasknum3},
+  { name: 'Not Started', value: tasknum3 },
 ];
   return (
     <div>
         
-    <BarChart width={200} height={300} data={data}>
+    <BarChart width={400} height={300} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
